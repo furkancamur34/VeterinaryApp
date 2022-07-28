@@ -23,7 +23,7 @@ public class AnimalController {
 
     @GetMapping({"/animals/list"})
     public ModelAndView getAllAnimals(){
-        ModelAndView modelAndView = new ModelAndView("index");
+        ModelAndView modelAndView = new ModelAndView("animals-list");
         List<Animal> animalList = animalRepository.findAll();
         modelAndView.addObject("animals", animalList);
         return modelAndView;
@@ -41,7 +41,7 @@ public class AnimalController {
     @PostMapping({"/addAnimalPost"})
     public String addAnimal(@ModelAttribute Animal animal){
         animalRepository.save(animal);
-        return "redirect:/animals/list";
+        return "redirect:/";
     }
 
     @GetMapping({"/animals/updateAnimalShow"})
@@ -55,6 +55,6 @@ public class AnimalController {
     @GetMapping({"animals/deleteAnimal"})
     public String deleteAnimal(@RequestParam Integer animalId){
         animalRepository.deleteById(animalId);
-        return "redirect:/animals/list";
+        return "redirect:/";
     }
 }

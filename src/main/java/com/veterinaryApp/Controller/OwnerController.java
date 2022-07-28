@@ -21,7 +21,7 @@ public class OwnerController {
 
     @GetMapping({"/owners/list"})
     public ModelAndView getAllOwners(){
-        ModelAndView modelAndView = new ModelAndView("index");
+        ModelAndView modelAndView = new ModelAndView("owners-list");
         List<Owner> ownerList = ownerRepository.findAll();
         modelAndView.addObject("owners", ownerList);
         return modelAndView;
