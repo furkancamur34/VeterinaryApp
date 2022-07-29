@@ -1,0 +1,12 @@
+Uygulamayı Intellij IDE kullanarak çalıştırabilirsiniz. IDE kullanmadan çalıştırmayı yapamadım.
+Projeyi Intellij IDE'de açmak için 
+-Sol üst koşedeki File butonu
+-Onun altındaki Open Butonuna tıklayınız.
+-Oradan çıkan pencerede uygulama klasörünü bulunuz ve çift tıklayınız
+-Sonra mavi OK butonuna basınız
+-Proje açılıcaktır ve indexleme yapacaktır bu 15-20 saniye sürebilir belki de daha az
+-Proje indexlemesini tamamladıktan sonra sağ üstte Yeşil Play butonuna tıklayınız
+-Proje ayağa kalktığını anlamak için aşağıda bir pencere açılacaktır.
+-Aşağıya doğru inen yazılar durduğunda proje ayağa kalkmış demektir.
+-Bir browser'ı açıp "localhost:8080" yazdıktan sonra uygulama çalışacaktır
+ 
