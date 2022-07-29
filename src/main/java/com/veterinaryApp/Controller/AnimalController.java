@@ -21,9 +21,9 @@ public class AnimalController {
     @Autowired
     private AnimalRepository animalRepository;
 
-    @GetMapping({"/animals/list"})
+    @GetMapping({"/"})
     public ModelAndView getAllAnimals(){
-        ModelAndView modelAndView = new ModelAndView("animals-list");
+        ModelAndView modelAndView = new ModelAndView("index");
         List<Animal> animalList = animalRepository.findAll();
         modelAndView.addObject("animals", animalList);
         return modelAndView;
